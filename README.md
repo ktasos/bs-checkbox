@@ -6,18 +6,9 @@ A simple jQuery plugin that replaces the default checkbox and uses Bootstrap gly
 Just wrap your checkboxes with a `<span>` element and call the plugin jQuery function.
 
 ```HTML
-<div class="form-group">
-    <div class="col-sm-offset-2 col-sm-10">
-        <div class="checkbox">
-            <label>
-                <span class="bs-checkbox">
-                    <input type="checkbox" />
-                </span>
-                Remember me
-            </label>
-        </div>
-    </div>
-</div>
+<span class="bs-checkbox">
+    <input type="checkbox" />
+</span>
 ```
 
 ```js
