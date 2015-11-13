@@ -11,7 +11,7 @@ Just wrap your checkboxes with a `<span>` element and call the plugin jQuery fun
         <div class="checkbox">
             <label>
                 <span class="bs-checkbox">
-                <input type="checkbox" />
+                    <input type="checkbox" />
                 </span>
                 Remember me
             </label>
@@ -30,6 +30,9 @@ jQuery('.bs-checkbox').bsCheckbox();
 
 ## Changelog
 
+
+#### Version 0.2
+Updated CSS and JS so it can be used outside form elements.
 
 #### Version 0.1
 Initial commit.

@@ -1,82 +1,113 @@
 <!DOCTYPE html>
 <html lang="en" ="http://www.w3.org/1999/xhtml">
-    <head>
-        <title>bsCheckbox demo</title>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
-        <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="stylesheet" href="bsCheckbox.css" />
-        <script type="text/javascript" src="bsCheckbox.js"></script>
-        <style type="text/css">
+<head>
+    <title>bsCheckbox demo</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="bsCheckbox.css" />
+    <script type="text/javascript" src="bsCheckbox.js"></script>
+    <style type="text/css">
         pre {
             margin: 0;
             padding: 0;
         }
     </style>
-    </head>
-    <body>
-        <div class="container">
-            <h2>bsCheckbox examples</h2>
-            <p>&nbsp;</p>
-            <h3>Basic example</h3>
-            <div class="row">
-                <div class="col-md-8">
-                    <form class="form-horizontal">
-                        <div class="form-group">
-                            <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
-                            <div class="col-sm-10">
-                                <input type="email" class="form-control" id="inputEmail3" placeholder="Email" />
+</head>
+<body>
+    <div class="container">
+        <h2>bsCheckbox examples</h2>
+        <p>&nbsp;</p>
+        <h3>Use inside form elements</h3>
+        <p>&nbsp;</p>
+        <div class="row">
+            <div class="col-md-8">
+                <form class="form-horizontal">
+                    <div class="form-group">
+                        <label for="field" class="col-sm-2 control-label">Some field</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="field" placeholder="Some field" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <div class="checkbox">
+                                <label>
+                                    <span class="bs-checkbox">
+                                        <input type="checkbox" />
+                                    </span>
+                                    Not checked by default
+                                </label>
                             </div>
                         </div>
-                        <div class="form-group">
-                            <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
-                            <div class="col-sm-10">
-                                <input type="password" class="form-control" id="inputPassword3" placeholder="Password" />
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <div class="checkbox">
+                                <label>
+                                    <span class="bs-checkbox">
+                                        <input type="checkbox" checked="checked" />
+                                    </span>
+                                    Checked by default
+                                </label>
                             </div>
                         </div>
-                        <div class="form-group">
-                            <div class="col-sm-offset-2 col-sm-10">
-                                <div class="checkbox">
-                                    <label>
-                                        <span class="bs-checkbox">
-                                            <input type="checkbox" />
-                                        </span> 
-										Not checked by default
-                                    </label>
-                                </div>
-                            </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">With out label</label>
+                        <div class="col-sm-10">
+                            <span class="bs-checkbox">
+                                <input type="checkbox" />
+                            </span>
                         </div>
-                        <div class="form-group">
-                            <div class="col-sm-offset-2 col-sm-10">
-                                <div class="checkbox">
-                                    <label>
-                                        <span class="bs-checkbox">
-                                            <input type="checkbox" checked="checked" />
-                                        </span> 
-										Checked by default
-                                    </label>
-                                </div>
-                            </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <button type="submit" class="btn btn-default">Sign in</button>
                         </div>
-                        <div class="form-group">
-                            <div class="col-sm-offset-2 col-sm-10">
-                                <button type="submit" class="btn btn-default">Sign in</button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-                <div class="col-md-4">
-                    <pre>
-                        <code class="javascript">
-	jQuery('.bs-checkbox').bsCheckbox();
-						</code>
-                    </pre>
-                </div>
+                    </div>
+                </form>
+                <p>&nbsp;</p>
+                <h3>Use outside form elements</h3>
+                <p>&nbsp;</p>
+                <table class="table table-bordered">
+                    <tr>
+                        <td class="text-right">
+                            Outside of <code>.form-group</code>
+                        </td>
+                        <td class="text-left" style="width:70%;">
+                            <span class="bs-checkbox">
+                                <input type="checkbox" />
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-right">
+                            Outside of <code>.form-group</code>
+                        </td>
+                        <td class="text-left" style="width:70%;">
+                            <span class="bs-checkbox">
+                                <input type="checkbox" checked="checked" />
+                            </span>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="col-md-4">
+                <pre><code class="html">
+    &lt;span class="bs-checksbox"&gt;
+        &lt;input type="checkbox" /&gt;
+    &lt;/span&gt;
+				</code></pre>
+                <pre><code class="javascript">
+    jQuery('.bs-checkbox').bsCheckbox();
+				</code></pre>
             </div>
         </div>
-        <script>
-			jQuery('.bs-checkbox').bsCheckbox();
-		</script>
-    </body>
+    </div>
+    <script>
+        jQuery('.bs-checkbox').bsCheckbox();
+    </script>
+</body>
 </html>

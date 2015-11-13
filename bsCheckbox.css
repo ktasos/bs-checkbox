@@ -1,3 +1,4 @@
-.bs-checkbox {margin-left: -20px; }
+.bs-checkbox { cursor: pointer; }
+label .bs-checkbox {margin-left: -20px; }
 .bs-checkbox input {display:none;}
-.bs-checkbox .fa{display:inline-block; min-width:14px; } /* Fix for different width in font-awesome icons */
+.bs-checkbox .fa {display:inline-block; min-width:14px; } /* Fix for different width in font-awesome icons */
