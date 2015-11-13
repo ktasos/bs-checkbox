@@ -20,6 +20,7 @@
                     jCheck[0].checked = !jCheck[0].checked;
                     jThis.removeClass('glyphicon-check').removeClass('glyphicon-unchecked');
                     jThis.addClass(jCheck[0].checked ? 'glyphicon-check' : 'glyphicon-unchecked');
+                    jCheck.trigger('change');
                 });
             }
 
