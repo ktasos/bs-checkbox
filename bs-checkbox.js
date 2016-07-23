@@ -1,6 +1,6 @@
 /*
  * bsCheckbox 0.2
- * Docs: https://github.com/ktasos/bootstrap-fabox
+ * Docs: https://github.com/ktasos/bs-checkbox
  * Author: Tasos Karagiannis
  * Website: http://codingstill.com
  * Twitter: https://twitter.com/codingstill
